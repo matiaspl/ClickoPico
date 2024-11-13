@@ -2,11 +2,17 @@
 
 Raspbery Pi Pico based DIY USB footpedal firmware written in CircuitPython. 
 
+<img src="docs/pico_pedal.jpg" width=50%>
+
+If you're interested what kind of a button it is - it's from my daughters toy sewing machine :)
+
 ## The idea ##
 
 The idea came to my mind while looking for a solution to a streaming/tv production case, where sign language translators need to be overlayed on top of the video only during specific times of the event. At times the technical director will take them on and off the screen, and there are times when it's the translators that trigger this change. And that poses a challenge, when human or technical resources are sparse.
 
 Using a foot pedal located at the translators booth seems ideal for this purpose, because the sign language talent can put himself on and off air when needed without technical directors intervention. Very often the translators work in pairs and need to change from time to time, wipe their noses, fix their hair, etc. Geting the control in "hands" of people doing the work simplified the workflow and made their work more comfortable.
+
+![ ](docs/kickflip.gif)
 
 Initially it was a hackathon-ish idea that I implemented overnight for an event produced by the Multimedia Center at the Lodz University of Technology - MIDI only, made to work directly with vMix. Since it proved useful I dived into the surfaces supported by Bitfocus Companionand ended up with one device that had a fairly simple HID implementation. I left reverse engineering the HID protocol to a lengthy discussion with ChatGPT and a bit of Googling about HID descriptors and reports. It all ended up with what you can find in this repo.
 
