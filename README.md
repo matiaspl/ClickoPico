@@ -18,7 +18,7 @@ Initially it was a hackathon-ish idea that I implemented overnight for an event 
 
 ## Installation ##
 
-Install [CircuitPython](https://circuitpython.org/downloads) on your RP2040 board (I used RP2040-ONE from Waveshare). Copy boot.py and code.py to the root folder of the filesystem and adafruit_hid, adatruit_midi, adafruit_debouncer and neopixel libraries to the lib folder (they're a part of the [Adafruit CircuitPython Library Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/latest) which is a separate download).
+Install [CircuitPython](https://circuitpython.org/downloads) on your RP2040 board (I used [RP2040-ONE from Waveshare](https://www.waveshare.com/wiki/RP2040-One)). Copy boot.py and code.py to the root folder of the filesystem and adafruit_hid, adatruit_midi, adafruit_debouncer and neopixel libraries to the lib folder (they're a part of the [Adafruit CircuitPython Library Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/latest) which is a separate download).
 
 Button presses are triggered by shorting appropriate GPIO pins to ground. If the "keypress" is properly recognized the onboard Neopixel LED will light up green and stay on for as long as the button is pressed.
 
